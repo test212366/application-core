@@ -1,0 +1,44 @@
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 50px);
+}
+
+.regPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 30px);
+}
+
+.regButtons{
+  width: 220px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.regInputMail, .regInput{
+  margin-bottom: 8px;
+  padding-top: 8px;
+  paddgin-bottom: 8px;
+}
+
+.regButton{
+  margin-top: 32px;
+}
+
+.smallRegButton{
+  font-size: 13px;
+  align-self: flex-start;
+}
+
+.regErrorMsg{
+  color: #fb2a2a;
+  font-size: 13px;
+}
+
+.modal{
+  padding: 10px 0;
+}

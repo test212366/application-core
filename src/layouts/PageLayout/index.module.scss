@@ -1,0 +1,63 @@
+.layout{
+  min-height: calc(100% - 50px);
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(240, 242, 245);
+}
+
+.sider{
+  height: calc(100vh - 68px);
+  background-color: #fff;
+  width: 256px;
+  border-radius: 8px;
+  margin: 8px;
+  box-shadow: rgb(100 116 139 / 16%) 0px 1px 1px, rgb(100 116 139 / 21%) 0px 1px 2px;
+}
+
+.content{
+  width: 100%;
+  height: calc(100% - 20px);
+  background-color: rgb(240, 242, 245);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.backdrop{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: none;
+}
+
+.backdropOpen{
+  display: block;
+}
+
+@media(max-width: 1024px) {
+  .content {
+    margin: 0;
+    padding: 12px;
+  }
+
+  .sider {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 47px;
+    left: -3px;
+    transform: scale(0);
+    transform-origin: top left;
+
+    height: auto;
+    z-index: 30;
+    transition: all 0.3s ease;
+  }
+
+  .siderOpen{
+    transform: scale(1);
+  }
+}

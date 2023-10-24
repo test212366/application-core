@@ -1,0 +1,46 @@
+.companies{
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTitle{
+  font-weight: bold;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table {
+  .ant-table-content{
+    overflow: scroll !important;
+  }
+}
+
+.modalForm{
+  margin-top: 34px;
+}
+
+.modalItem{
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalFooter{
+  display: flex;
+  margin-top: 18px;
+
+  & button:first-child{
+    margin-left: auto;
+    margin-right: 8px;
+  }
+}
+
+.modalError{
+  font-size: 13px;
+  color: red;
+}
